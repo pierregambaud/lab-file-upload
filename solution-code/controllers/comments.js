@@ -4,7 +4,7 @@ const Post = require('../models/post.js');
 // show
 //
 
-exports = function (req, res, next) {
+exports show = function (req, res, next) {
     if (!req.user) return next(new Error('You must be logged to create a comment'));
   
     const id = req.params.id;

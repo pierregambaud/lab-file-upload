@@ -12,6 +12,6 @@ router.post('/', uploadCloud.single('pic'), postsController.create);
 
 router.get('/:id', postsController.show);
 
-router.post('/:id/comments', uploadCloud.single('image'), commentsController.);
+router.post('/:id/comments', uploadCloud.single('image'), commentsController.show);
 
 module.exports = router;
